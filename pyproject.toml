@@ -1,0 +1,15 @@
+[project]
+name = "splunkless"
+version = "0.1.0"
+description = "Search engine for exported Splunk buckets without Splunk"
+requires-python = ">=3.11"
+dependencies = [
+    "zstandard>=0.22.0",
+]
+
+[project.scripts]
+splunkless = "splunkless.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
